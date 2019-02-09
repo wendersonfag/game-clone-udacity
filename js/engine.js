@@ -77,8 +77,8 @@ var Engine = (function(global) {
      * functionality this way (you could just implement collision detection
      * on the entities themselves within your app.js file).
      */
-    function update(dt) {
-        updateEntities(dt);
+    function update(dt, player) {
+        updateEntities(dt, player);
         //checkCollisions();
     }
 
@@ -89,9 +89,9 @@ var Engine = (function(global) {
      * the data/properties related to the object. Do your drawing in your
      * render methods.
      */
-    function updateEntities(dt) {
-        allEnemies.forEach(function(enemy) {
-            enemy.update(dt);
+    function updateEntities(dt, player) {
+        allEnemies.forEach(function(enemy, player) {
+            enemy.update(dt, player);
         });
         player.update();
     }

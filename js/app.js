@@ -33,20 +33,20 @@ class Item {
         }
        
         this.checkCollisions(player);
-       
+     
        
       }
 
     //verifica se teve a colisao entre o player e o enemy
-    checkCollisions(){
+    checkCollisions(jogador){
      
-        if( (player.x  -40<= this.x &&  player.x  + 40 >=  this.x) &&
-            (player.y  -50<= this.y && player.y  +50>= this.y)){
+        if( (jogador.x  -40<= this.x &&  jogador.x  + 40 >=  this.x) &&
+            (jogador.y  -50<= this.y && jogador.y  +50>= this.y)){
                 
-             player.reiniciarPos()
+             jogador.reiniciarPos();
                 
         }
-    
+        
         
     }
 
@@ -122,6 +122,8 @@ class Player extends Item{
 // Coloque o objeto jogador em uma variável chamada jogador
 let player = new Player('images/char-boy.png',2,5);
 
+//let enemy = new Enemy();
+//enemy.checkCollisions(player);
 // Coloque todos os objetos inimigos em uma matriz chamada allEnemies
 
 let allEnemies = [
@@ -134,7 +136,7 @@ let allEnemies = [
     new Enemy('images/enemy-bug.png', -10, 3, 1),
   
   ];
-
+  
 // Isso escuta as teclas pressionadas e envia as chaves para o seu
 // Método Player.handleInput (). Você não precisa modificar isso.
 document.addEventListener('keyup', function(e) {

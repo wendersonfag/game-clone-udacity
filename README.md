@@ -1,11 +1,5 @@
 # Classic Arcade Game Clone Project
 
-## Table of Contents
-
-- [Instructions](#instructions)
-- [Contributing](#contributing)
-
-## Instructions
 
 Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
 
@@ -15,6 +9,15 @@ Your **README.md** file should be updated with instructions on both how to 1. Ru
 
 For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
 
-## Contributing
+# Projeto de Fliperama Clássico
+O jogo tem como objetivo que o jogador atravesse pelo cenário até chegar ao rio sem ser atingido por nenhum inimigo. Cada inimigos se movimentam em velocidades diferentes. Caso o jogador e atingindo por um inimigos o jogador reinicia na posição inicial.
+## Iniciar o jogo
+Para jogar basta abrir o arquivo index.html localizado na pasta raiz como o navegador de sua preferência. 
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## Como jogar
+Utilize as setas do teclado para movimentar o personagem. O jogador pode se movimentar para cima, baixo, direita e esquerda.
+
+## Construção do jogo
+- Foi utilizado HTML (Canvas) e CSS para estruturar o cenário;
+- Foi usado JavaScript para adicionar toda funcionalidade do jogo, como personagem, inimigo.
+

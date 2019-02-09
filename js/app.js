@@ -1,4 +1,4 @@
-// Inimigos nosso jogador deve evitar
+// class item e usa como extação para class enemy e player
 class Item {
     constructor(sprite, posCol, posRow ) {
       this.sprite = sprite;
@@ -16,10 +16,8 @@ class Item {
     }
   }
   
-     // Variáveis aplicadas a cada uma das nossas instâncias aqui,
-      // nós fornecemos um para você começar
-      // A imagem / sprite dos nossos inimigos, isso usa
-      // um ajudante que fornecemos para carregar facilmente imagens
+     
+      // class enemy e usada para clicar o inimigos
   class Enemy extends Item{
       constructor(sprite, posCol, posRow, speed){
           super(sprite, posCol, posRow, speed);
@@ -34,12 +32,12 @@ class Item {
             this.x = -40 * this.speed;
         }
        
-        this.checkCollisions();
+        this.checkCollisions(player);
        
        
       }
 
-
+    //verifica se teve a colisao entre o player e o enemy
     checkCollisions(){
      
         if( (player.x  -40<= this.x &&  player.x  + 40 >=  this.x) &&
@@ -62,6 +60,7 @@ class Item {
 // Agora escreva sua própria classe de jogador
 // Esta classe requer uma atualização (), render () e
 // um método handleInput ().
+// class para criar o player
 class Player extends Item{
     constructor(sprite, posCol, posRow){
         super(sprite, posCol, posRow);
@@ -74,7 +73,7 @@ class Player extends Item{
         
         
     }
-
+    //verifica se foi utilizadas as teclas define qual posição o player vai
     handleInput(tecla){
 
         switch(tecla){
@@ -94,18 +93,19 @@ class Player extends Item{
            
         }
     }
-
+    //verifica se o player chegou até o rio e renicia o player na posição inial
     vitoria(){
         if(this.y <= 10){
            
-            setTimeout(function(){ player.reiniciarPos(); }, 350); 
+            //tem alguma outra maneira de fazer com this.
+            setTimeout( ()=> { this.reiniciarPos(); }, 350); 
 
         }
         
        
     }
 
-
+    //Reinicia a posição do player
     reiniciarPos(){
         this.x = 202;
         this.y = 375;

@@ -122,8 +122,7 @@ class Player extends Item{
 // Coloque o objeto jogador em uma variável chamada jogador
 let player = new Player('images/char-boy.png',2,5);
 
-//let enemy = new Enemy();
-//enemy.checkCollisions(player);
+
 // Coloque todos os objetos inimigos em uma matriz chamada allEnemies
 
 let allEnemies = [

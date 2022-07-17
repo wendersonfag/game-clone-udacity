@@ -9,15 +9,16 @@ Your **README.md** file should be updated with instructions on both how to 1. Ru
 
 For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
 
-# Projeto de Fliperama Cl·ssico
-O jogo tem como objetivo que o jogador atravesse pelo cen·rio atÈ chegar ao rio sem ser atingido por nenhum inimigo. Cada inimigos se movimentam em velocidades diferentes. Caso o jogador e atingindo por um inimigos o jogador reinicia na posiÁ„o inicial.
+# Projeto de Fliperama Cl√°ssico
+O jogo tem como objetivo que o jogador atravesse pelo cen√°rio at√© chegar ao rio sem ser atingido por nenhum inimigo. Cada inimigos se movimentam em velocidades diferentes. Caso o jogador e atingindo por um inimigos o jogador reinicia na posi√ß√£o inicial.
 ## Iniciar o jogo
-Para jogar basta abrir o arquivo index.html localizado na pasta raiz como o navegador de sua preferÍncia. 
+Para jogar basta abrir o arquivo index.html localizado na pasta raiz como o navegador de sua prefer√™ncia. 
 
 ## Como jogar
 Utilize as setas do teclado para movimentar o personagem. O jogador pode se movimentar para cima, baixo, direita e esquerda.
 
-## ConstruÁ„o do jogo
-- Foi utilizado HTML (Canvas) e CSS para estruturar o cen·rio;
+## Constru√ß√£o do jogo
+- Foi utilizado HTML (Canvas) e CSS para estruturar o cen√°rio;
 - Foi usado JavaScript para adicionar toda funcionalidade do jogo, como personagem, inimigo.
 
+Wederson Teste branch remota

@@ -20,3 +20,5 @@ Utilize as setas do teclado para movimentar o personagem. O jogador pode se movi
 ## Construção do jogo
 - Foi utilizado HTML (Canvas) e CSS para estruturar o cenário;
 - Foi usado JavaScript para adicionar toda funcionalidade do jogo, como personagem, inimigo.
+
+Teste final como trabalhar com brach
